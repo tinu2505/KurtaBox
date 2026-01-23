@@ -1,0 +1,154 @@
+{
+  "design_strategy": {
+    "theme": "Jewel & Luxury Hybrid",
+    "archetype": "The Midnight Atelier",
+    "emotional_tone": "Sophisticated, Exclusive, Cinematic, Timeless",
+    "visual_style": "High contrast, generous negative space, editorial typography, immersive imagery"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Bodoni Moda, serif",
+      "weights": ["400", "700"],
+      "usage": "Hero titles, section headers, product names",
+      "letter_spacing": "tracking-tight",
+      "line_height": "leading-none"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["300", "400", "500"],
+      "usage": "Paragraphs, UI elements, prices, specifications",
+      "letter_spacing": "tracking-wide"
+    },
+    "labels": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["600"],
+      "usage": "Nav links, buttons, tags",
+      "text_transform": "uppercase",
+      "letter_spacing": "tracking-[0.2em]"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#0A0A0A",
+      "secondary": "#FFFFFF",
+      "accent": "#C5A059",
+      "neutral_light": "#F5F5F0",
+      "neutral_dark": "#1A1A1A",
+      "success": "#10B981",
+      "error": "#EF4444"
+    },
+    "usage": {
+      "background_landing": "bg-[#0A0A0A]",
+      "text_landing": "text-white",
+      "background_shop": "bg-[#FFFFFF]",
+      "text_shop": "text-[#0A0A0A]",
+      "border_subtle": "border-white/10",
+      "accent_elements": "text-[#C5A059] or border-[#C5A059]"
+    }
+  },
+  "layout_system": {
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-8"
+    },
+    "grids": {
+      "landing_hero": "grid grid-cols-1 md:grid-cols-12 gap-4 h-screen",
+      "shop_catalog": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16"
+    },
+    "containers": {
+      "max_width": "max-w-[1920px] mx-auto"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-[#C5A059] hover:text-white rounded-none px-8 py-4 uppercase tracking-widest text-xs transition-all duration-300",
+      "secondary": "bg-transparent border border-white/20 text-white hover:border-white hover:bg-white hover:text-black rounded-none px-8 py-4 uppercase tracking-widest text-xs transition-all duration-300",
+      "shop_primary": "bg-black text-white hover:bg-[#C5A059] rounded-none px-6 py-3 uppercase tracking-widest text-xs"
+    },
+    "cards": {
+      "product": "group relative bg-transparent border-none",
+      "feature": "relative overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm p-8"
+    },
+    "inputs": {
+      "style": "bg-transparent border-b border-white/20 focus:border-white rounded-none px-0 py-4 text-white placeholder:text-white/40 focus:ring-0 focus:outline-none transition-colors"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "scroll": "lenis",
+    "transitions": {
+      "default": "transition-all duration-500 ease-out",
+      "hover": "transition-colors duration-300 ease-in-out"
+    },
+    "animations": {
+      "fade_up": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "transition": { "duration": 0.6 }
+      },
+      "stagger_children": {
+        "animate": { "transition": { "staggerChildren": 0.1 } }
+      }
+    }
+  },
+  "assets": {
+    "images": {
+      "hero": [
+        {
+          "url": "https://images.unsplash.com/photo-1754485115876-9221149ccc19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxtYWxlJTIwbW9kZWwlMjBsdXh1cnklMjBmYXNoaW9uJTIwZWRpdG9yaWFsfGVufDB8fHx8MTc2OTE3Nzc5MXww&ixlib=rb-4.1.0&q=85",
+          "alt": "Man in blue suit portrait",
+          "category": "hero_main"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1761522001672-5f1d45ce1b10?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxtYWxlJTIwbW9kZWwlMjBsdXh1cnklMjBmYXNoaW9uJTIwZWRpdG9yaWFsfGVufDB8fHx8MTc2OTE3Nzc5MXww&ixlib=rb-4.1.0&q=85",
+          "alt": "Man in suit looking over shoulder",
+          "category": "hero_secondary"
+        }
+      ],
+      "products": [
+        {
+          "url": "https://images.unsplash.com/photo-1761522002366-870191e79f2a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxtZW5zJTIwbHV4dXJ5JTIwc2hpcnQlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzY5MTc3Nzk0fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Luxury Shirt Lifestyle",
+          "category": "shirt"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-16151372/pexels-photo-16151372.jpeg",
+          "alt": "Leather Jacket",
+          "category": "jacket"
+        },
+        {
+          "url": "https://images.pexels.com/photos/2897533/pexels-photo-2897533.jpeg",
+          "alt": "Luxury Trousers",
+          "category": "pants"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1608380272894-b3617f04b463?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxtZW5zJTIwbHV4dXJ5JTIwc25lYWtlcnMlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzY5MTc3ODIwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "White Sneakers",
+          "category": "shoes"
+        },
+        {
+           "url": "https://images.unsplash.com/photo-1591280011281-7f86a0156682?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxtZW5zJTIwYmxhY2tncm91bmR8ZW58MHx8fDE3NjkxNzc4MTR8MA&ixlib=rb-4.1.0&q=85",
+           "alt": "Black T-Shirt",
+           "category": "tshirt"
+        }
+      ]
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": "You are building a high-end luxury fashion e-commerce site. The user experience must feel 'expensive' - this means slow, smooth animations, high contrast, and no clutter.",
+    "landing_page": "Use the 'Tetris' grid (Mode A) for the hero section. Mix video/image content with minimal text. The background should be #0A0A0A (Obsidian). Use 'Bodoni Moda' for all headings.",
+    "shop_page": "Switch to a cleaner, lighter theme (or keep it dark if you can maintain readability). Use a strict 4-column grid. Product cards should be minimal: Image + Name + Price. No 'Add to Cart' buttons cluttering the grid - reveal them on hover.",
+    "product_detail": "Split screen layout. Left side: Scrollable image gallery (sticky). Right side: Product details (sticky). Use 'Manrope' for the description text.",
+    "interactions": "Use 'sonner' for toast notifications (e.g., 'Added to Cart'). Use 'lenis' for smooth scrolling on the body.",
+    "mock_data": "Create a robust mock data file for products. Use the provided image URLs. Do not use placeholders."
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Inter' font for headings.",
+    "Do not use gradients for backgrounds - use solid colors or subtle noise textures.",
+    "Ensure all interactive elements have 'data-testid'.",
+    "Use 'lucide-react' for icons.",
+    "Respect 'prefers-reduced-motion'.",
+    "Use 'sonner' for toasts."
+  ]
+}
