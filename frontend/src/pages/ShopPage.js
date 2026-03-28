@@ -16,7 +16,7 @@ export const ShopPage = () => {
   
   // Filter states
   const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || 'All');
-  const [priceRange, setPriceRange] = useState([1200, 1400]);
+  const [priceRange, setPriceRange] = useState([0, 1400]);
   const [selectedSizes, setSelectedSizes] = useState([]);
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedBrands, setSelectedBrands] = useState([]);
@@ -193,13 +193,13 @@ export const ShopPage = () => {
           onValueChange={setPriceRange}
           min={1200}
           max={1400}
-          step={10}
+          step={100}
           className="mb-2"
           data-testid="filter-price-slider"
         />
         <div className="flex justify-between text-sm text-gray-600 font-['Manrope',sans-serif]">
-          <span data-testid="filter-price-min">${priceRange[0]}</span>
-          <span data-testid="filter-price-max">${priceRange[1]}</span>
+          <span data-testid="filter-price-min">₹{priceRange[0]}</span>
+          <span data-testid="filter-price-max">₹{priceRange[1]}</span>
         </div>
       </div>
 
