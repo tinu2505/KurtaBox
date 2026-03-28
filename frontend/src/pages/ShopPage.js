@@ -16,7 +16,7 @@ export const ShopPage = () => {
   
   // Filter states
   const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || 'All');
-  const [priceRange, setPriceRange] = useState([0, 1200]);
+  const [priceRange, setPriceRange] = useState([1200, 1400]);
   const [selectedSizes, setSelectedSizes] = useState([]);
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedBrands, setSelectedBrands] = useState([]);
@@ -133,7 +133,7 @@ export const ShopPage = () => {
     showNewArrivals, sortBy, searchQuery
   ]);
 
-  const categories = ['All', 'Shirts', 'T-Shirts', 'Pants', 'Jackets'];
+  const categories = ['All', 'Kurtas', 'Pajamas', 'Combos', 'Jackets'];
 
   const toggleFilter = (value, selected, setSelected) => {
     if (selected.includes(value)) {
@@ -191,7 +191,8 @@ export const ShopPage = () => {
         <Slider
           value={priceRange}
           onValueChange={setPriceRange}
-          max={1200}
+          min={1200}
+          max={1400}
           step={10}
           className="mb-2"
           data-testid="filter-price-slider"
@@ -208,7 +209,7 @@ export const ShopPage = () => {
           Size
         </h3>
         <div className="grid grid-cols-3 gap-2">
-          {['S', 'M', 'L', 'XL', 'XXL', '30', '32', '34', '36', '38'].map(size => (
+          {['S', 'M', 'L', 'XL', 'XXL', 'XXXL'].map(size => (
             <button
               key={size}
               onClick={() => toggleFilter(size, selectedSizes, setSelectedSizes)}

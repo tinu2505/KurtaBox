@@ -38,7 +38,7 @@ export const Navigation = ({ isDark = false }) => {
             className="font-['Bodoni_Moda',serif] text-2xl font-bold tracking-tight"
             data-testid="nav-logo"
           >
-            ATELIER
+            KURTA BOX
           </Link>
 
           {/* Center Navigation */}

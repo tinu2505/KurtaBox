@@ -369,7 +369,7 @@ export const products = [
   }
 ];
 
-export const brands = ["All", "Atelier Noir", "Sovereign", "Meridian", "Essentials"];
+export const brands = ["All", "Wedding Wear", "Festival Kurtas", "Formal/Office Wear", "Party Wear"];
 export const colors = ["All", "White", "Black", "Blue", "Gray", "Beige", "Charcoal", "Navy"];
 export const materials = ["All", "Cotton", "Silk Blend", "Linen", "Wool", "Leather", "Modal Blend", "Wool Blend", "Cotton Twill", "Nylon", "Denim"];
 export const styles = ["All", "Formal", "Casual", "Business"];

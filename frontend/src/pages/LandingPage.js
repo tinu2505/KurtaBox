@@ -45,7 +45,7 @@ export const LandingPage = () => {
             Masculinity
           </h1>
           <p className="font-['Manrope',sans-serif] text-base text-white/70 max-w-md mb-8 tracking-wide leading-relaxed" data-testid="hero-description">
-            Discover a curated collection of timeless elegance. Where Italian craftsmanship meets contemporary design.
+            Discover a curated collection of timeless elegance. Where Desi craftsmanship meets contemporary design.
           </p>
           <div className="flex gap-4">
             <Link
@@ -169,7 +169,7 @@ export const LandingPage = () => {
               Crafted for the Modern Gentleman
             </h2>
             <p className="font-['Manrope',sans-serif] text-base text-white/70 leading-relaxed mb-4" data-testid="story-text-1">
-              At Atelier, we believe that true luxury lies in the details. Each piece in our collection is meticulously crafted using the finest materials sourced from renowned Italian mills.
+              At Kurta Box, we believe that true luxury lies in the details. Each piece in our collection is meticulously crafted using the finest materials sourced from renowned Desi mills.
             </p>
             <p className="font-['Manrope',sans-serif] text-base text-white/70 leading-relaxed" data-testid="story-text-2">
               Our commitment to excellence extends beyond aesthetics—we create timeless pieces that transcend seasonal trends, designed to become cherished staples in your wardrobe.
@@ -208,7 +208,7 @@ export const LandingPage = () => {
         <div className="max-w-[1920px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="font-['Bodoni_Moda',serif] text-xl font-bold mb-4">ATELIER</h3>
+              <h3 className="font-['Bodoni_Moda',serif] text-xl font-bold mb-4">Kurta Box</h3>
               <p className="text-sm text-white/60 font-['Manrope',sans-serif]">
                 Redefining luxury menswear with timeless elegance.
               </p>
@@ -216,9 +216,9 @@ export const LandingPage = () => {
             <div>
               <h4 className="font-['Manrope',sans-serif] text-xs uppercase tracking-widest font-semibold mb-4">Shop</h4>
               <ul className="space-y-2 text-sm text-white/60 font-['Manrope',sans-serif]">
-                <li><Link to="/shop?category=Shirts" className="hover:text-white transition-colors">Shirts</Link></li>
-                <li><Link to="/shop?category=T-Shirts" className="hover:text-white transition-colors">T-Shirts</Link></li>
-                <li><Link to="/shop?category=Pants" className="hover:text-white transition-colors">Pants</Link></li>
+                <li><Link to="/shop?category=Kurtas" className="hover:text-white transition-colors">Kurtas</Link></li>
+                <li><Link to="/shop?category=Pajamas" className="hover:text-white transition-colors">Pajamas</Link></li>
+                <li><Link to="/shop?category=Combos" className="hover:text-white transition-colors">Combos</Link></li>
                 <li><Link to="/shop?category=Jackets" className="hover:text-white transition-colors">Jackets</Link></li>
               </ul>
             </div>
@@ -231,11 +231,17 @@ export const LandingPage = () => {
             </div>
             <div>
               <h4 className="font-['Manrope',sans-serif] text-xs uppercase tracking-widest font-semibold mb-4">Contact</h4>
-              <p className="text-sm text-white/60 font-['Manrope',sans-serif]">support@atelier.com</p>
+              <p className="text-sm text-white/60 font-['Manrope',sans-serif]">Owner - Deepak Garg <br/>
+                Contact Details - +91 9549625852 , 9950119056 <br/>
+                Email - kurtabox@gmail.com <br/>
+                Address - Mansavali vas,
+                Sheoganj, <br/> Sirohi, 307027
+                (Rajasthan)  
+              </p>
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 text-center text-sm text-white/40 font-['Manrope',sans-serif]">
-            © 2024 Atelier. All rights reserved.
+            © 2024 Kurta Box. All rights reserved.
           </div>
         </div>
       </footer>
